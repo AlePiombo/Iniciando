@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            width: 400px;
+            height: 400px;
+            background: bisque;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
+           flex-direction: row;
+        }
+        .item {
+            /* height: 40px;
+            width: 40px; */
+            background: rgb(255, 196, 0);
+         
+        }
+
+        .container .item:nth-child(1){
+            grid-column: 1 / 2;
+        }
+        .container .item:nth-child(2){
+            grid-column: 2 / 3;
+            grid-row: 2 / 3 ;
+        }
+        
+        .container .item:nth-child(3){
+            grid-column: 3 / 4;
+            grid-row: 3 / 4 ;
+        }
+        .container .item:nth-child(4){
+            grid-column: 4 / 5;
+            grid-row: 4 / 5 ;
+        }
+        
+        .container .item:nth-child(5){
+            grid-column: 5 / 6;
+            grid-row: 5 / 6 ;
+        }
+        .container .item:nth-child(6){
+            grid-column: 2 / 4;
+            grid-row: 4 / 6 ;
+            background: rgb(226, 101, 43);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>   
+        <div class="item">2</div>   
+        <div class="item">3</div>   
+        <div class="item">4</div>   
+        <div class="item">5</div>  
+        <div class="item">6</div>  
+     </div>
+</body>
+</html>
